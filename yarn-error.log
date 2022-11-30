@@ -1,0 +1,94 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /bin:/usr/bin:/usr/local/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/projects/node-ijfr9h/package.json: Expected double-quoted property name in JSON at position 2571
+      at JSON.parse (<anonymous>)
+      at eval (file:///usr/local/lib/node_modules/yarn/dist/yarn.js:1397:57)
+      at Generator.next (<anonymous>)
+      at step (file:///usr/local/lib/node_modules/yarn/dist/yarn.js:309:30)
+      at eval (file:///usr/local/lib/node_modules/yarn/dist/yarn.js:320:13)
+
+npm manifest: 
+  {
+    "name": "node-starter",
+    "version": "0.0.0",
+    "dependencies": {
+          "@theia/callhierarchy": "next",
+              "@theia/file-search": "next",
+                  "@theia/git": "next",
+                      "@theia/markers": "next",
+                          "@theia/messages": "next",
+                              "@theia/navigator": "next",
+                                  "@theia/outline-view": "next",
+                                      "@theia/plugin-ext-vscode": "next",
+                                          "@theia/preferences": "next",
+                                              "@theia/preview": "next",
+                                                  "@theia/search-in-workspace": "next",
+                                                      "@theia/terminal": "next",
+                                                          "@theia/vsx-registry": "next"
+                                                            },
+                                                              "devDependencies": {
+                                                                  "@theia/cli": "next"
+                                                                    },
+                                                                      "scripts": {
+                                                                          "prepare": "yarn run clean && yarn build && yarn run download:plugins",
+                                                                              "clean": "theia clean",
+                                                                                  "build": "theia build --mode development",
+                                                                                      "start": "theia start --plugins=local-dir:plugins",
+                                                                                          "download:plugins": "theia download:plugins"
+                                                                                            },
+                                                                                              "theiaPluginsDir": "plugins",
+                                                                                                "theiaPlugins": {
+                                                                                                    "vscode-builtin-extensions-pack": "https://open-vsx.org/api/eclipse-theia/builtin-extension-pack/1.50.1/file/eclipse-theia.builtin-extension-pack-1.50.1.vsix"
+                                                                                                      },
+    }
+  }"dependencies": {
+        "@theia/callhierarchy": "next",
+            "@theia/file-search": "next",
+                "@theia/git": "next",
+                    "@theia/markers": "next",
+                        "@theia/messages": "next",
+                            "@theia/navigator": "next",
+                                "@theia/outline-view": "next",
+                                    "@theia/plugin-ext-vscode": "next",
+                                        "@theia/preferences": "next",
+                                            "@theia/preview": "next",
+                                                "@theia/search-in-workspace": "next",
+                                                    "@theia/terminal": "next",
+                                                        "@theia/vsx-registry": "next"
+                                                          },
+                                                            "devDependencies": {
+                                                                "@theia/cli": "next"
+                                                                  },
+                                                                    "scripts": {
+                                                                        "prepare": "yarn run clean && yarn build && yarn run download:plugins",
+                                                                            "clean": "theia clean",
+                                                                                "build": "theia build --mode development",
+                                                                                    "start": "theia start --plugins=local-dir:plugins",
+                                                                                        "download:plugins": "theia download:plugins"
+                                                                                          },
+                                                                                            "theiaPluginsDir": "plugins",
+                                                                                              "theiaPlugins": {
+                                                                                                  "vscode-builtin-extensions-pack": "https://open-vsx.org/api/eclipse-theia/builtin-extension-pack/1.50.1/file/eclipse-theia.builtin-extension-pack-1.50.1.vsix"
+                                                                                                    },
+                                                                                                    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
